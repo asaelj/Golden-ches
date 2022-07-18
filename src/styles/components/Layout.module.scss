@@ -1,0 +1,53 @@
+@import '../Vars.scss';
+
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $primary;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr 60px;
+}
+
+.layout__body {
+  background-color: $secondary;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 30px 20px;
+  min-height: 100%;
+}
+
+.layout__header {
+  display: flex;
+  align-items: center;
+}
+.layout__hamburger {
+  font-size: 1.3rem;
+  color: black;
+  outline: none;
+  background-color: white;
+  border: none;
+  margin-left: 1rem;
+  border-radius: 50px;
+  width: 2rem;
+  height: 2rem;
+  svg {
+    display: block;
+    margin: auto;
+  }
+}
+
+.layout__title {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  p {
+    color: $text-primary;
+    font-family: $kanit;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 500px) {
+}
